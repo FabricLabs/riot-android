@@ -82,7 +82,7 @@ public class ThemeUtils {
      * @return the selected application theme
      */
     public static String getApplicationTheme(Context context) {
-        String appTheme = THEME_LIGHT_VALUE;
+        String appTheme = THEME_DARK_VALUE;
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
 
         // defines a default value if not defined

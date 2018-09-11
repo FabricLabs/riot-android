@@ -1792,6 +1792,7 @@ public class VectorHomeActivity extends RiotAppCompatActivity implements SearchV
                         break;
                     }
 
+                    /*
                     case R.id.sliding_copyright_terms: {
                         VectorUtils.displayAppCopyright();
                         break;
@@ -1811,6 +1812,7 @@ public class VectorHomeActivity extends RiotAppCompatActivity implements SearchV
                         VectorUtils.displayThirdPartyLicenses();
                         break;
                     }
+                    */
                 }
 
                 VectorHomeActivity.this.mSlidingMenuIndex = -1;

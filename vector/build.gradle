@@ -96,6 +96,17 @@ android {
             resValue "string", "short_flavor_description", "F"
             resValue "string", "flavor_description", "FDroid"
         }
+
+        grove {
+            applicationId "im.vector.alpha"
+            // use the version name
+            versionCode rootProject.ext.versionCodeProp
+            versionName rootProject.ext.versionNameProp
+            resValue "string", "allow_gcm_use", "false"
+            resValue "string", "allow_ga_use", "false"
+            resValue "string", "short_flavor_description", "Δ"
+            resValue "string", "flavor_description", "Grove"
+        }
     }
 
     lintOptions {
@@ -211,6 +222,6 @@ dependencies {
 }
 
 
-if (!getGradle().getStartParameter().getTaskRequests().toString().contains("fdroid")) {
+if (!getGradle().getStartParameter().getTaskRequests().toString().contains("grove")) {
     apply plugin: 'com.google.gms.google-services'
 }
